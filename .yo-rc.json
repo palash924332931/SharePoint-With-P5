@@ -1,0 +1,11 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "isCreatingSolution": true,
+    "environment": "spo",
+    "version": "1.7.1",
+    "libraryName": "generci-model-generation",
+    "libraryId": "a01d61c5-d30d-4a7b-9c2d-f045044fb4e0",
+    "packageManager": "npm",
+    "componentType": "webpart"
+  }
+}

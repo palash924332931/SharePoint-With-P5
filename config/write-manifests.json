@@ -1,0 +1,4 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/write-manifests.schema.json",
+  "cdnBasePath": "https://mp2018devops.sharepoint.com/sites/myProjectsEN/spfx_assets/generic-project-model-webpart"
+}

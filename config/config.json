@@ -1,0 +1,18 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "generic-model-generation-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/genericModelGeneration/GenericModelGenerationWebPart.js",
+          "manifest": "./src/webparts/genericModelGeneration/GenericModelGenerationWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "GenericModelGenerationWebPartStrings": "lib/webparts/genericModelGeneration/loc/{locale}.js"
+  }
+}

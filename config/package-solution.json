@@ -1,13 +1,13 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
   "solution": {
-    "name": "generci-model-generation-client-side-solution",
-    "id": "a01d61c5-d30d-4a7b-9c2d-f045044fb4e0",
+    "name": "project-model-client-side-solution",
+    "id": "dcc4983b-6da3-4579-96b7-7dad0c43f60f",
     "version": "1.0.0.0",
     "includeClientSideAssets": true,
     "skipFeatureDeployment": true
   },
   "paths": {
-    "zippedPackage": "solution/generci-model-generation.sppkg"
+    "zippedPackage": "solution/project-model.sppkg"
   }
 }

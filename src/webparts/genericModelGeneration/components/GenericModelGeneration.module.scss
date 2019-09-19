@@ -1,79 +1,214 @@
 @import '~@microsoft/sp-office-ui-fabric-core/dist/sass/SPFabricCore.scss';
-
 .genericModelGeneration {
-  .container {
-    max-width: 700px;
-    margin: 0px auto;
-    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 25px 50px 0 rgba(0, 0, 0, 0.1);
-  }
-
-  .row {
-    @include ms-Grid-row;
-    @include ms-fontColor-white;
-    background-color: $ms-color-themeDark;
-    padding: 20px;
-  }
-
-  .column {
-    @include ms-Grid-col;
-    @include ms-lg10;
-    @include ms-xl8;
-    @include ms-xlPush2;
-    @include ms-lgPush1;
-  }
-
-  .title {
-    @include ms-font-xl;
-    @include ms-fontColor-white;
-  }
-
-  .subTitle {
-    @include ms-font-l;
-    @include ms-fontColor-white;
-  }
-
-  .description {
-    @include ms-font-l;
-    @include ms-fontColor-white;
-  }
-
-  .button {
-    // Our button
-    text-decoration: none;
-    height: 32px;
-
-    // Primary Button
-    min-width: 80px;
-    background-color: $ms-color-themePrimary;
-    border-color: $ms-color-themePrimary;
-    color: $ms-color-white;
-
-    // Basic Button
-    outline: transparent;
-    position: relative;
-    font-family: "Segoe UI WestEuropean","Segoe UI",-apple-system,BlinkMacSystemFont,Roboto,"Helvetica Neue",sans-serif;
-    -webkit-font-smoothing: antialiased;
-    font-size: $ms-font-size-m;
-    font-weight: $ms-font-weight-regular;
-    border-width: 0;
-    text-align: center;
-    cursor: pointer;
-    display: inline-block;
-    padding: 0 16px;
-
-    .label {
-      font-weight: $ms-font-weight-semibold;
-      font-size: $ms-font-size-m;
-      height: 32px;
-      line-height: 32px;
-      margin: 0 4px;
-      vertical-align: top;
-      display: inline-block;
+    .container {
+        background-color: #fff;
+        margin: 0px auto;
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 25px 50px 0 rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        padding: 15px;
     }
-  }  
-  
+    .row {
+        @include ms-Grid-row;
+        @include ms-fontColor-white;
+        background-color: $ms-color-themeDark;
+        padding: 20px;
+    }
+    .column {
+        @include ms-Grid-col;
+        @include ms-lg10;
+        @include ms-xl8;
+        @include ms-xlPush2;
+        @include ms-lgPush1;
+    }
+    .title {
+        @include ms-font-xl;
+        @include ms-fontColor-white;
+    }
+    .subTitle {
+        @include ms-font-l;
+        @include ms-fontColor-white;
+    }
+    .description {
+        @include ms-font-l;
+        @include ms-fontColor-white;
+    }
+    .button {
+        // Our button
+        text-decoration: none;
+        height: 32px;
+        // Primary Button
+        min-width: 80px;
+        background-color: $ms-color-themePrimary;
+        border-color: $ms-color-themePrimary;
+        color: $ms-color-white;
+        // Basic Button
+        outline: transparent;
+        position: relative;
+        font-family: "Segoe UI WestEuropean", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+        -webkit-font-smoothing: antialiased;
+        font-size: $ms-font-size-m;
+        font-weight: $ms-font-weight-regular;
+        border-width: 0;
+        text-align: center;
+        cursor: pointer;
+        display: inline-block;
+        padding: 0 16px;
+        .label {
+            font-weight: $ms-font-weight-semibold;
+            font-size: $ms-font-size-m;
+            height: 32px;
+            line-height: 32px;
+            margin: 0 4px;
+            vertical-align: top;
+            display: inline-block;
+        }
+    }
 }
 
-.modelDesignContainer{
-  overflow: auto;  
+
+/* Custom Select */
+
+.ControlZone--emphasisBackground {
+    background: transparent!important;
+}
+
+.processContant {
+    max-width: 800px;
+    @media screen and (max-width: 1024px) {
+        max-width: 255px;
+        margin: 0 auto;
+    }
+    .modelItem {
+        width: 50%;
+        max-width: 300px;
+        .mwSimple {
+            min-width: 73px;
+            vertical-align: middle;
+        }
+        @media screen and ( max-width: 1250px) {
+            width: 100%;
+            max-width: inherit;
+        }
+    }
+    .projectModelarea {
+        width: 50%;
+        transform: translateY(75%);
+        padding: 0;
+        flex: 1 0 auto;
+        @media screen and ( max-width: 1250px) {
+            transform: inherit;
+            width: 100%;
+            padding: 5px;
+            flex: inherit;
+        }
+    }
+    .btnShowModel {
+        a {
+            font-size: 15px;
+            p {
+                text-align: center;
+                padding-left: 20px;
+                @media screen and ( max-width: 1250px) {
+                    padding-left: 50px;
+                    text-align: left;
+                }
+            }
+        }
+    }
+}
+
+.secondaryLabel {
+    font-size: 15px;
+    font-weight: 600;
+    display: block;
+    min-width: 60px;
+}
+
+.selectWrap {
+    position: relative;
+    display: block;
+    width: 200px;
+    height: 40px;
+    line-height: 3;
+    background: #fff;
+    overflow: hidden;
+    border-radius: 6px;
+    margin: 5px 0;
+    @media screen and (max-width: 1200px) {
+        width: 180px;
+        height: 40px;
+    }
+}
+
+select {
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0 0 0 0.5em;
+    color: rgb(51, 51, 51);
+    ;
+    cursor: pointer;
+    background: #fff;
+    box-shadow: inherit;
+    outline: 0;
+    border: 2px solid #0078d7;
+    border-radius: 6px;
+}
+
+select::-ms-expand {
+    display: none;
+}
+
+select option {
+    background: #fff;
+    color: #333;
+}
+
+.selectWrap:active,
+.selectWrap:focus {
+    border-radius: 6px 6px 0 0;
+}
+
+
+/* Arrow */
+
+.selectWrap::after {
+    content: "\25BC";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    padding: 4px 10px;
+    background: #0078d7;
+    pointer-events: none;
+    color: #fff;
+    font-size: 10px;
+    text-align: center;
+}
+
+
+/* Transition */
+
+.selectWrap:hover::after {
+    color: #fff;
+}
+
+.selectWrap::after {
+    -webkit-transition: 0.25s all ease;
+    -o-transition: 0.25s all ease;
+    transition: 0.25s all ease;
+}
+
+.setDefaultBackground {
+    // background-color: #fff;
+    // -webkit-box-shadow: 1px 1px 16px 1px rgba(0, 0, 0, .1);
+    // box-shadow: 1px 1px 16px 1px rgba(0, 0, 0, .1);
+    // border-radius: 10px;
+    // padding: 15px;
+    font-size: 13px;
+}
+
+.modelDesignContainer {
+    overflow: auto;
 }

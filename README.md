@@ -1,4 +1,4 @@
-## generci-model-generation
+## project-model
 
 This is where you include your WebPart documentation.
 

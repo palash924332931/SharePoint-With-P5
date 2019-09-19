@@ -1,6 +1,6 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/spfx/client-side-web-part-manifest.schema.json",
-  "id": "28b4335f-511d-4f92-ad82-c52f88535d61",
+  "id": "28b4335f-511d-4f92-ad82-c52f88535d62",
   "alias": "GenericModelGenerationWebPart",
   "componentType": "WebPart",
 
@@ -16,11 +16,11 @@
   "preconfiguredEntries": [{
     "groupId": "5c03119e-3074-46fd-976b-c60198311f70", // Other
     "group": { "default": "Other" },
-    "title": { "default": "generic-model-generation" },
-    "description": { "default": "generic-model-generation description" },
+    "title": { "default": "Generic model generation" },
+    "description": { "default": "Generic model generation" },
     "officeFabricIconFontName": "Page",
     "properties": {
-      "description": "generic-model-generation"
+      "description": "Generic model generation1"
     }
   }]
 }

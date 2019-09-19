@@ -1,0 +1,217 @@
+/* start button component */
+
+.overflow-hide {
+    overflow: hidden;
+}
+
+.btn.lg-circle {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
+    text-decoration: none;
+    -moz-transition: 0.3s;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #2d79d0;
+    font-size: 16px;
+}
+
+.btn.lg-circle:hover {
+    color: #fff;
+    background-color: #2d79d0;
+}
+
+.bar-right-highlight .col {
+    max-width: 680px;
+    margin: 0 auto;
+    position: relative;
+    background: #f4f4f4;
+    padding: 0;
+}
+
+.carousel-outer {
+    width: 100%;
+}
+
+.ide-wrap .ide-item-wrap {
+    width: 320px;
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+.ide-item-wrap .button-wrap {
+    padding: 5px;
+}
+
+.ide-wrap h3 {
+    font-size: 35px;
+    text-transform: uppercase;
+    color: #2d79d0;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+
+.ide-wrap .btn.lg-circle {
+    margin-bottom: 15px;
+    top: 3px;
+}
+
+.ide-wrap .carousel-item {
+    padding: 5px;
+}
+
+.ide-wrap .carousel-item .btn {
+    white-space: normal;
+    line-height: 15px;
+    padding: 12px 5px;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
+.btn.lg-circle {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #2d79d0;
+    font-size: 16px;
+}
+
+.ide-wrap .ide-item-wrap button strong {
+    font-size: 12px;
+}
+
+@media screen and (min-width: 1440px) {
+    .ide-wrap .carousel-item button strong {
+        font-size: 15px;
+    }
+}
+
+
+/* popup */
+
+.pop-up-container {
+    position: absolute;
+    /* top: 100%; */
+    left: 0;
+    width: 100%;
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(50px);
+    -webkit-transition: opacity 0.5s, visibility 0.5s, transform 0.5s;
+    transition: opacity 0.5s, visibility 0.5s, transform 0.5s;
+}
+
+.pop-up-container.activeModal {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.pop-up-container.show-left {
+    left: 0;
+}
+
+.pop-up-container.show-right {
+    right: 0;
+    left: inherit;
+}
+
+.pop-content {
+    position: absolute;
+    background-color: white;
+    top: 0px;
+    padding: 20px;
+    border: 2px solid #eee;
+    -ms-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    overflow: auto;
+    max-width: 100%;
+}
+
+@media screen and (min-width: 1250px) {
+    .pop-content {
+        max-width: inherit;
+    }
+}
+
+.pop-up-container.show-left .pop-content {
+    left: 0;
+}
+
+.pop-up-container.show-right .pop-content {
+    right: 0;
+}
+
+.btn-show-model a {
+    color: #007bff !important;
+    cursor: pointer;
+}
+
+.btn-show-model a p {
+    font-size: 15px;
+}
+
+.model-heading {
+    font-size: 18px;
+    color: #4B506A;
+    font-weight: bold;
+    margin: -7px 20px 10px 0;
+    letter-spacing: 1px;
+}
+
+.ControlZoneEmphasisBackground {
+    background: transparent;
+}
+
+@media screen and (min-width: 1024px) {
+    .pop-up-container {
+        min-width: 650px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .pop-up-container.show-left .pop-content,
+    .pop-up-container.show-right .pop-content {
+        right: 50%;
+        left: inherit;
+        transform: translateX(50%);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .hideOnMobileDevice {
+        display: none !important;
+    }
+}
+
+.smallScreenOfProcess [class*="modelItem_"] {
+    width: 100%;
+    max-width: inherit;
+}
+
+.smallScreenOfProcess [class*="projectModelarea_"] {
+    transform: inherit;
+    width: 100%;
+    padding: 5px;
+    flex: inherit;
+}
+
+.smallScreenOfProcess [class*="btnShowModel_"] a p {
+    /* /.smallScreenOfProcess .btnShowModel_1412a89a a  p {  */
+    padding-left: 50px;
+    text-align: left;
+}
+
+.ControlZone--emphasisBackground {
+    background: transparent !important;
+}
